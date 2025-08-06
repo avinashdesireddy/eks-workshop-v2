@@ -53,3 +53,9 @@ devenv.local.nix
 
 # direnv
 .direnv
+restructuring-summary.md
+restructuring-completion.md
+notes.md
+.kiro/specs/kubernetes-basics-lab/tasks.md
+.kiro/specs/kubernetes-basics-lab/requirements.md
+.kiro/specs/kubernetes-basics-lab/design.md

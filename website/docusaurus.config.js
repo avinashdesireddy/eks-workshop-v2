@@ -10,6 +10,7 @@ import remarkIncludeCode from "./src/remark/include-code.js";
 import remarkIncludeKustomization from "./src/remark/include-kustomization.js";
 import remarkParameters from "./src/remark/parameters.js";
 import remarkIncludeYaml from "./src/remark/include-yaml.js";
+// Import will be done inline to avoid module issues
 
 //require("dotenv").config({ path: ".kustomize-env" });
 

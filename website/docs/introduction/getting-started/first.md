@@ -63,12 +63,18 @@ These manifests include the Deployment for the catalog API which expresses the d
 5. Run [probes/healthchecks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/) against the `/health` path
 6. [Requests](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/) a specific amount of CPU and memory so the Kubernetes scheduler can place it on a node with enough available resources
 
+For more details, see the [Kubernetes Deployment documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/).
+
 The manifests also include the Service used by other components to access the catalog API:
 
 ::yaml{file="manifests/base-application/catalog/service.yaml" paths="spec.ports,spec.selector"}
 
+Learn more about [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/) and how they work.
+
 1. Exposes itself on port 80 and targets the `http` port exposed by the Deployment, which translates to port 8080
 2. Selects catalog Pods using labels that match what we expressed in the Deployment above
+
+Learn more about [Kubernetes Services](https://kubernetes.io/docs/concepts/services-networking/service/) and how they work.
 
 Let's create the catalog component:
 
